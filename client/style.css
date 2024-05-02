@@ -1,0 +1,231 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#backdrop {
+    position: absolute;
+    background-image: url('images/black-white-rolling-camera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+#curtain {
+    background-color: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    z-index: 2;
+    height: 100vh;
+    width: 75vw;
+    left: 12.5vw;
+}
+
+#pageTitle {
+    position: relative;
+    width: 100%;
+    color:gold;
+    font-family: "Tangerine", cursive;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2rem 1rem 1rem;
+    z-index: 3;
+}
+
+#dataEntry {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+input {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+textarea {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+#submitAction {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin: 5px;
+}
+
+#add-review-button {
+    width: 150px;
+    height: 25px;
+}
+
+button {
+    background-color: #101010;
+    color: gold;
+    font-family: "Tangerine", cursive;
+    font-size: 1.25rem;
+    font-weight: 800;
+    word-spacing: 2px;
+    margin: 5px;
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#blackStrip {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#tableHeaders {
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* font-family: "Tangerine", cursive; */
+    width: 92%;
+    padding: 0;
+}
+
+.tHead {
+    margin: 20px 20px 20px 20px;
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
+}
+
+#tableHeaders h3 {
+    width: 15%;
+    max-width: 15%;
+}
+
+section {
+    position: relative;
+    z-index: 3;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#modifyDataButtons {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+
+.dataFeed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* font-family: "Tangerine", cursive; */
+    font-size: 1em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.editWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.saveChangesWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.saveItButtons {
+    padding: 5px 10px 5px 5px;
+}
+
+.ratingChange {
+    width: 30px;
+}
+
+hr {
+    width: 100%;
+    color: gold;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    color: gold;
+    width: 15%;
+    max-width: 15%;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+h4 {
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+p {
+    text-align: center;
+    color: gold;
+    width: 20%;
+    max-width: 20%;
+    overflow-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 1210px) {
+    .editWrapper {
+        flex-flow: column;
+    }
+
+    #dataEntry {
+        flex-flow: column;
+    }
+}
